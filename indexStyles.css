@@ -107,6 +107,7 @@ body  {
 .intro {
     background-image: url(images/pc-hardware_bw_1080.webp);
     background-color: #555555;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -117,6 +118,7 @@ body  {
 .computers {
     background-image: url(images/phase_change_bw_1080.webp);
     background-color: #555555;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -127,6 +129,7 @@ body  {
 .engeneering {
 	background-image: url(images/phase_change_bw_1080.webp);
     background-color: #555555;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,6 +140,7 @@ body  {
 .programming {
     background-image: url(images/programming_bw_1080.webp);
     background-color: #555555;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;

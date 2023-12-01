@@ -71,7 +71,7 @@ a:hover {
 .portfolioWebsiteIntro {
     background-image: url(images/programming_bw_1080.webp);
     background-color: #555555;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -82,7 +82,7 @@ a:hover {
 .portfolioWebsiteInfo {
     background-image: url(images/programming_bw_1080.webp);
     background-color: #555555;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
 	justify-content: center;
 	align-items: center;
