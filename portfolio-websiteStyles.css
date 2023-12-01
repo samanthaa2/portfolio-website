@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/bartex');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+html {
+    scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+body  {
+    font-family: 'Chivo', sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+    background-color: #555555;
+    animation: fadeInAnimation 3s 1 ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding: 0;
+    margin: 0;
+    border: 0;
+	display: grid;
+	justify-items: center;
+}
+
+.navbar {
+    background-color: #E0218A;
+    background-image: linear-gradient(to right, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #7F00FF, #FF00FF, #FF007F, #FF0000);
+    animation: backgroundGradientAnimation 8s infinite linear;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+    background-size: 250%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+	width: 100%;
+	height: 10vh;
+	opacity: 0.3;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbarTransparent {
+    opacity: 0.3;
+}
+
+a:link, a:visited {
+	font-family: 'Bartex', sans-serif;
+	font-size: 64px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+	text-decoration: none;
+	background: none;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    font-size: 75px;
+    transition: all 0.5s ease;
+}
+
+.navHolder {
+	height: 10vh;
+}
+
+.portfolioWebsiteIntro {
+    background-image: url(images/programming_bw_1080.webp);
+    background-color: #555555;
+    background-size: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+.portfolioWebsiteInfo {
+    background-image: url(images/programming_bw_1080.webp);
+    background-color: #555555;
+    background-size: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+header {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.panelBody {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 25px;
+
+}
+
+
+.footer {
+    height: 5vh;
+	font-size: 18px;
+    width: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes backgroundGradientAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: 167%;
+    }
+}

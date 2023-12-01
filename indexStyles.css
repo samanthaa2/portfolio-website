@@ -1,0 +1,236 @@
+@import url('https://fonts.cdnfonts.com/css/bartex');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+html {
+    scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+body  {
+    font-family: 'Chivo', sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+    background-color: #555555;
+    animation: fadeInAnimation 3s 1 ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding: 0;
+    margin: 0;
+    border: 0;
+	display: grid;
+	justify-items: center;
+}
+
+.logoPanel {
+    background-color: #E0218A;
+    background-image: linear-gradient(to right, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #7F00FF, #FF00FF, #FF007F, #FF0000);
+	/* Barbie hex gradient: #E0218A, #ED5C9B, #F18DBC, #F7B9D7 
+	RGB hex gradient: #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #7F00FF, #FF00FF, #FF007F, #FF0000*/
+    animation: backgroundGradientAnimation 8s infinite linear;
+    animation-iteration-count: infinite;
+    background-size: 250%;
+    height: 90vh;
+	scroll-snap-align: start;
+}
+
+.logo {
+	font-family: 'Bartex', sans-serif;
+    font-size: 196px;
+	font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+	background: none;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.logo:hover {
+    font-size: 228px;
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    background-color: #E0218A;
+    background-image: linear-gradient(to right, #FF0000, #FF8000, #FFFF00, #80FF00, #00FF00, #00FF80, #00FFFF, #7F00FF, #FF00FF, #FF007F, #FF0000);
+    animation: backgroundGradientAnimation 8s infinite linear;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+    background-size: 250%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+	width: 100%;
+	height: 10vh;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbarTransparent {
+    opacity: 0.3;
+}
+
+.navLogo {
+	font-family: 'Bartex', sans-serif;
+	font-size: 64px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+	background: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.navLogo:hover {
+    font-size: 75px;
+    transition: all 0.5s ease;
+}
+
+.navLogoShow {
+    opacity: 1;
+}
+
+.navHolder {
+	height: 10vh;
+}
+
+.intro {
+    background-image: url(images/pc-hardware_bw_1080.webp);
+    background-color: #555555;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+.computers {
+    background-image: url(images/phase_change_bw_1080.webp);
+    background-color: #555555;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+.engeneering {
+	background-image: url(images/phase_change_bw_1080.webp);
+    background-color: #555555;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+.programming {
+    background-image: url(images/programming_bw_1080.webp);
+    background-color: #555555;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	scroll-snap-align: start;
+}
+
+.panelBody {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 25px;
+
+}
+
+header {
+	font-size: 48px;
+    font-weight: bold;
+	text-align: center;
+}
+
+.projectBox img {
+    border-radius: 15px;
+}
+
+.badges {
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.programmingProjects {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.engeneeringProjects {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.projectBox {
+	transition: all 0.5s ease;
+}
+
+.projectBox:hover {
+    transform: translateY(-15px);
+	transition: all 0.5s ease;
+}
+
+.contact {
+	background-color: #555555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
+	scroll-snap-align: start;
+}
+
+.footer {
+    height: 5vh;
+	font-size: 18px;
+    width: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pinkFlutter {
+    background-image: linear-gradient(to right, #5BCEFA, #F5A9B8, #FFFFFF, #F5A9B8, #5BCEFA, #00FF80, #00FFFF, #7F00FF, #FF00FF, #FF007F);
+}
+
+/* 1116 */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes backgroundGradientAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: 167%;
+    }
+}
