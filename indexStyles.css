@@ -14,11 +14,8 @@ body  {
     animation: fadeInAnimation 3s 1 ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    padding: 0;
     margin: 0;
     border: 0;
-	display: grid;
-	justify-items: center;
 }
 
 .logoPanel {
@@ -29,6 +26,9 @@ body  {
     animation: backgroundGradientAnimation 8s infinite linear;
     animation-iteration-count: infinite;
     background-size: 250%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
     height: 90vh;
 	scroll-snap-align: start;
 }
@@ -51,6 +51,26 @@ body  {
 
 .logo:hover {
     font-size: 228px;
+    transition: all 0.5s ease;
+}
+
+.scrollArrow {
+    font-size: 64px;
+	font-weight: bold;
+    background: none;
+    color: #FFFFFF;
+    opacity: 0.5;
+    border: none;
+    text-decoration: none;
+    animation: hoverAnimation 1s infinite alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: infinite;
+    transition: all 0.5s ease;
+    margin-top: 500px;
+}
+
+.scrollArrow:hover {
+    opacity: 1;
     transition: all 0.5s ease;
 }
 
@@ -86,6 +106,7 @@ body  {
 	font-weight: bold;
 	color: #FFFFFF;
 	border: none;
+    text-decoration: none;
 	background: none;
     transition: all 0.5s ease;
     opacity: 0;
@@ -164,6 +185,18 @@ header {
 	text-align: center;
 }
 
+li a {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+li a:hover {
+    color: #999999;
+    transition: all 0.25s ease;
+}
+
 .projectBox img {
     border-radius: 15px;
 }
@@ -236,5 +269,14 @@ header {
     }
     100% {
         background-position: 167%;
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
     }
 }

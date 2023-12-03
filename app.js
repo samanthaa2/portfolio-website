@@ -15,6 +15,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
+
 const navbar = document.getElementById("navbar")
 
 function handleScroll() {
@@ -31,16 +32,15 @@ function handleScroll() {
 document.addEventListener("scroll", handleScroll);
 
 
-
-let scrollbutton = document.getElementById("navLogo");
+let scrollupbutton = document.getElementById("navLogo");
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollbutton.style.display = "block";
+        scrollupbutton.style.display = "block";
     } else {
-        scrollbutton.style.display = "none";
+        scrollupbutton.style.display = "none";
     }
 }
 
@@ -48,6 +48,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
 
 
 
